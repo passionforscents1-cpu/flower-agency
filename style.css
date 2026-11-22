@@ -1,0 +1,24 @@
+:root{--bg:#fbf8fb;--kaart:#fff;--tekst:#1d1b2e;--zacht:#6b6880;--roze:#ec4899;--paars:#7c3aed;--lijn:#ece6f0}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14131f;--kaart:#1d1c2b;--tekst:#f2f0f7;--zacht:#a9a6bd;--lijn:#2c2a3d}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tekst);font:17px/1.65 "Segoe UI",system-ui,-apple-system,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--lijn)}
+header .wrap{display:flex;align-items:center;gap:12px;height:68px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:19px;color:var(--tekst);text-decoration:none}
+nav{margin-left:auto;display:flex;gap:18px;font-size:15px}
+nav a{color:var(--zacht);text-decoration:none}nav a:hover{color:var(--roze)}
+.held{padding:72px 0 40px}
+.held h1{font-size:44px;line-height:1.1;margin:0 0 14px;letter-spacing:-.02em}
+.held h1 span{background:linear-gradient(90deg,var(--roze),var(--paars));-webkit-background-clip:text;background-clip:text;color:transparent}
+.held p{color:var(--zacht);font-size:19px;max-width:620px;margin:0}
+.kanalen{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin:36px 0 56px}
+.k{background:var(--kaart);border:1px solid var(--lijn);border-radius:14px;padding:18px}
+.k b{display:block;font-size:17px}.k small{color:var(--zacht);font-size:14px}
+main.tekst{padding:48px 0 64px}
+main.tekst h1{font-size:34px;margin:0 0 6px}main.tekst h2{font-size:21px;margin:32px 0 6px}
+main.tekst .datum{color:var(--zacht);font-size:14px;margin-bottom:24px}
+a{color:var(--paars)}
+footer{border-top:1px solid var(--lijn);color:var(--zacht);font-size:14px;padding:24px 0 40px}
+footer a{color:var(--zacht);margin-right:16px}
+@media (max-width:600px){.held h1{font-size:34px}nav{gap:12px;font-size:14px}}
